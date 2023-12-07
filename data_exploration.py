@@ -32,7 +32,6 @@ cols_categorical = ['type_of_meal_plan', 'required_car_parking_space', 'room_typ
             'market_segment_type', 'repeated_guest', 'lead_time_quartiles']
 df_categorical = df[cols_categorical]
 
-
 # Continuous features
 summary_statistics = df_continuous.describe()
 print("\nSummary Statistics")
