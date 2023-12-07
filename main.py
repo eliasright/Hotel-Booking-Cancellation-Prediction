@@ -86,7 +86,7 @@ def run_baseline_model(X_train, X_test, y_train, y_test, X_final, y_final, verbo
     y_pred = pipeline.predict(X_test)
     y_pred_final = pipeline.predict(X_final)
     evaluation(y_test, y_pred, "Base Line Model on X_Test")
-    evaluation(y_final, y_pred_final, "Base Line Model on Y_Test")
+    evaluation(y_final, y_pred_final, "Base Line Model on X_Final")
 
     # SHAP 
     if verbose > 0:
@@ -190,7 +190,7 @@ def run_optimized_model(X_train, X_test, y_train, y_test, X_final, y_final,
     y_pred = pipeline.predict(X_test)
     y_pred_final = pipeline.predict(X_final)
     evaluation(y_test, y_pred, "Optimized Model on X_test")
-    evaluation(y_final, y_pred_final, "Base Line Model on Y_Test")
+    evaluation(y_final, y_pred_final, "Base Line Model on X_Final")
 
 # Function to run xgboost with different sets of features
 def run_model_with_features(X_train, X_test, y_train, y_test, continuous_features, categorical_features):
