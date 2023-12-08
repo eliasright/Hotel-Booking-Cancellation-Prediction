@@ -13,11 +13,11 @@ The motivation behind this test XGBoost in predict whether a guest would cancel 
 The dataset is split into 3 type of features:
 - Continuous features
 - Categorical features
-- 'lead_time' -> 'prior_probability'
+- `lead_time` -> `prior_probability`
 
-Here 'lead_time' refers to the duration between the booking date and the date of arrival. A custom transformer will be utilized to categorize customers into different clusters based on their 'lead_time'. Subsequently, for each of these clusters, the likelihood of cancellation is calculated. For instance, if a cluster comprises 6 people and 4 out of these 6 individuals cancel while 2 do not, a prior probability of 4/6 is assigned to that cluster. This probability will then be applied to any new data that falls within the same 'lead_time' range for that particular cluster.
+Here `lead_time` refers to the duration between the booking date and the date of arrival. A custom transformer will be utilized to categorize customers into different clusters based on their `lead_time`. Subsequently, for each of these clusters, the likelihood of cancellation is calculated. For instance, if a cluster comprises 6 people and 4 out of these 6 individuals cancel while 2 do not, a prior probability of 4/6 is assigned to that cluster. This probability will then be applied to any new data that falls within the same `lead_time` range for that particular cluster.
 
-Initially, in Model 1, the 'lead_time' is divided into four quartiles, representing the lower 25%, 25-50%, 50-75%, and 75-100% ranges. However, to enhance the model's effectiveness, Bayesian optimization will be employed later to determine an optimal split. This approach may result in a different partitioning of the 'lead_time', such as into two or eight segments, instead of the initial four
+Initially, in Model 1, the `lead_time` is divided into four quartiles, representing the lower 25%, 25-50%, 50-75%, and 75-100% ranges. However, to enhance the model's effectiveness, Bayesian optimization will be employed later to determine an optimal split. This approach may result in a different partitioning of the 'lead_time', such as into two or eight segments, instead of the initial four
 
 There will be a total of 3 models:
 - Baseline model: XGBoost with default hyperparameters
