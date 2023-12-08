@@ -240,16 +240,16 @@ F1 Score: 0.8365781710914455
 From the baseline model
 
 The Validation set
-- Accuracy improved by approximately 0.331%.
-- Precision decreased slightly by approximately -0.286%.
-- Recall improved by approximately 1.611%.
-- F1 Score improved by approximately 0.722%.
+- Accuracy improved by approximately 0.331%
+- Precision decreased slightly by approximately -0.286%
+- Recall improved by approximately 1.611%
+- F1 Score improved by approximately 0.722%
 
 The testing set (Where performance will be measured)
-- Accuracy improved by approximately 0.404%.
-- Precision decreased slightly by approximately -0.611%.
-- Recall improved by approximately 2.308%.
-- F1 Score improved by approximately 0.921%.
+- Accuracy improved by approximately 0.404%
+- Precision decreased slightly by approximately -0.611%
+- Recall improved by approximately 2.308%
+- F1 Score improved by approximately 0.921%
 
 We see an overall improvement in the model's performance, especially in the critical metrics of recall and F1 Score, which are essential in contexts where the balance between false positives and false negatives is important. The improvements in recall on both the validation and testing sets are particularly notable, suggesting that the model is becoming more adept at identifying true positives.
 
@@ -300,31 +300,31 @@ F1 Score: 0.8371681415929204
 #### Changes
 **From the baseline model to model 3**
 The Validation set
-- Accuracy improved slightly by approximately 0.166%.
-- Precision decreased slightly by approximately 0.91%.
-- Recall improved by approximately 2.00%.
-- F1 Score improved by approximately 0.575%.
+- Accuracy improved slightly by approximately 0.166%
+- Precision decreased slightly by approximately 0.91%
+- Recall improved by approximately 2.00%
+- F1 Score improved by approximately 0.575%
 
 The testing set (Where performance will be measured)
-- Accuracy improved by approximately 0.411%.
-- Precision decreased slightly by approximately 0.262%.
-- Recall improved by approximately 2.09%.
-- F1 Score improved by approximately 0.942%.
+- Accuracy improved by approximately 0.411%
+- Precision decreased slightly by approximately 0.262%
+- Recall improved by approximately 2.09%
+- F1 Score improved by approximately 0.942%
 
 We see a noteworthy progression in model performance from the baseline to Model 3. The improvements in accuracy and recall for both the validation and testing sets are particularly significant. An increase in recall by approximately 2.00% in the validation set and 2.09% in the testing set indicates the model's enhanced capability to identify true positives. Despite a slight decrease in precision, the substantial improvements in recall and F1 Score suggest that Model 3 is more effective in balancing false positives and negatives
 
 **From the model 2 to model 3**
 For the validation set (X_test):
-- Accuracy decreased by approximately -0.257%.
-- Precision decreased by approximately -0.163%.
-- Recall decreased by approximately -0.714%.
-- F1 Score decreased by approximately -0.449%.
+- Accuracy decreased by approximately -0.257%
+- Precision decreased by approximately -0.163%
+- Recall decreased by approximately -0.714%
+- F1 Score decreased by approximately -0.449%
 
 The testing set (Where performance will be measured)
-- Accuracy improved slightly by approximately 0.037%.
-- Precision improved slightly by approximately 0.061%.
-- Recall improved slightly by approximately 0.058%.
-- F1 Score improved slightly by approximately 0.059%.
+- Accuracy improved slightly by approximately 0.037%
+- Precision improved slightly by approximately 0.061%
+- Recall improved slightly by approximately 0.058%
+- F1 Score improved slightly by approximately 0.059%
 
 In transitioning from Model 2 to Model 3, I implemented feature selection based on XGBoost's default hyperparameters, followed by Bayesian optimization on the selected features. This approach, however, was grounded in an assumption that may not have been optimal. The deterioration in performance metrics on the validation set, as evidenced by the decreases in accuracy, precision, recall, and F1 Score, suggests that my assumption during feature selection and subsequent optimization might have inadvertently led to a model that was less effective at generalizing to validation data. This could be indicative of overfitting, where the model, though finely tuned on certain features, lost some of its predictive robustness on the validation set.
 
@@ -336,8 +336,8 @@ Transitioning from Model 2 to Model 3 showed an interesting trend: While the val
 While the improvements were generally modest, often less than one percent and at most two percent, these incremental gains are significant in practical scenarios. In real-world settings with thousands of bookings, even small percentage improvements in predicting customer cancellations can have a substantial impact.
 
 Future improvements
-- Move beyond XGBoost's default settings for better generalization.
-- Implement methods to reduce overfitting.
-- Experiment with a wider range of hyperparameters.
-- Incorporate more diverse data for enhanced real-world applicability. Through feature interactions or more data collection.
+- Move beyond XGBoost's default settings in feature selections for better generalization
+- Implement methods to reduce overfitting
+- Experiment with a wider range of hyperparameters
+- Incorporate more diverse data for enhanced real-world applicability. Through feature interactions or more data collection
 - Predict with other models
