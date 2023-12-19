@@ -1,27 +1,4 @@
 # Hotel Booking Cancellation Prediction
-## Files
-1. **Images/**: This directory contains all the image outputs from main.py and data_exploration.py.
-
-2. **.gitattributes**: A configuration file I use to manage specific attributes of the paths in my repository.
-
-3. **Hotel Reservations.csv**: This is the dataset file containing the hotel reservation data I analyze.
-
-4. **data_exploration.py**: My Python script for performing the initial exploration and analysis of the dataset.
-
-5. **README.md**: A Markdown file where I provide a comprehensive overview, documentation, and instructions for the project.
-
-7. **cancellation_odds_transformer.py**: A Python script dedicated to processing and analyzing the odds of hotel cancellations.
-
-8. **main.py**: The main Python script of the project, executing the core workflow and data analysis.
-
-9. **requirements.txt**: This file lists all the Python dependencies necessary for the project, ensuring a consistent setup environment.
-## How to run
-
-1. **Download the Repository**: Clone or download the repository from GitHub to your local machine.
-
-2. **Install Requirements**: Run `pip install -r requirements.txt` to install the required Python packages listed in `requirements.txt`.
-
-3. **Run the Main Script**: Execute the main script of the project by running `python main.py`.
 
 ## Motivation
 The motivation behind this test XGBoost in predict whether a guest would cancel a booking. Then try to finetune the model to improve upon the metrics: Accuracy, Precision, Recall, and F1. The predictive model will be trained using a training set, finetune on a validation set (called X_test in the code), and testing set (called X_final in the code). This way, I can improve on the model and use the validation set to guide me in improving the model. Just to make sure I am not overfitting to the validation set, the final testing set will be only tested at the end to see how well the model performed.
@@ -58,6 +35,25 @@ There will be a total of 3 models:
 - Model 3 improved upon Model 2 on the testing set but worsen for the validation set due to bad assumption in feature selection.
 - Only a small percentage increment in performance but in real-world settings with thousands of bookings, even small percentage improvements in predicting customer cancellations can have a substantial impact.
 - Future finetuning could be explored
+
+## How to run
+
+1. **Download the Repository**: Clone or download the repository from GitHub to your local machine.
+
+2. **Install Requirements**: Run `pip install -r requirements.txt` to install the required Python packages listed in `requirements.txt`.
+
+3. **Run the Main Script**: Execute the main script of the project by running `python main.py`.
+
+## Files
+
+1. **Images/**: Directory with image outputs from `main.py` and `data_exploration.py`.
+2. **.gitattributes**: Configuration file for managing repository path attributes.
+3. **Hotel Reservations.csv**: Dataset file with hotel reservation data.
+4. **data_exploration.py**: Script for initial dataset exploration and analysis.
+5. **README.md**: Markdown file detailing the project overview and guidelines.
+6. **cancellation_odds_transformer.py**: Script for analyzing hotel cancellation odds.
+7. **main.py**: Main script for project's core data analysis workflow.
+8. **requirements.txt**: List of Python dependencies for the project setup.
 
 ## 1. Data Overview and Preprocessing
 
