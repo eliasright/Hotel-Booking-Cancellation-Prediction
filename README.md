@@ -1,7 +1,5 @@
 # Hotel Booking Cancellation Prediction
 ## Files
-Absolutely, here's a confident, first-person description of the files for my GitHub repository:
-
 1. **Images/**: This directory contains all the image outputs from main.py and data_exploration.py.
 
 2. **.gitattributes**: A configuration file I use to manage specific attributes of the paths in my repository.
