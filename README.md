@@ -1,4 +1,22 @@
 # Hotel Booking Cancellation Prediction
+## Files
+Absolutely, here's a confident, first-person description of the files for my GitHub repository:
+
+1. **Images/**: This directory contains all the image outputs from main.py and data_exploration.py.
+
+2. **.gitattributes**: A configuration file I use to manage specific attributes of the paths in my repository.
+
+3. **Hotel Reservations.csv**: This is the dataset file containing the hotel reservation data I analyze.
+
+4. **data_exploration.py**: My Python script for performing the initial exploration and analysis of the dataset.
+
+5. **README.md**: A Markdown file where I provide a comprehensive overview, documentation, and instructions for the project.
+
+7. **cancellation_odds_transformer.py**: A Python script dedicated to processing and analyzing the odds of hotel cancellations.
+
+8. **main.py**: The main Python script of the project, executing the core workflow and data analysis.
+
+9. **requirements.txt**: This file lists all the Python dependencies necessary for the project, ensuring a consistent setup environment.
 ## How to run
 
 1. **Download the Repository**: Clone or download the repository from GitHub to your local machine.
