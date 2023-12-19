@@ -1,5 +1,11 @@
 # Hotel Booking Cancellation Prediction
 
+## Project Overview
+
+1. [Data Overview and Preprocessing](#1-data-overview-and-preprocessing)
+2. [Models Performance](#2-models-performance)
+4. [Conclusion](#3-conclusion)
+
 ## Motivation
 The motivation behind this test XGBoost in predict whether a guest would cancel a booking. Then try to finetune the model to improve upon the metrics: Accuracy, Precision, Recall, and F1. The predictive model will be trained using a training set, finetune on a validation set (called X_test in the code), and testing set (called X_final in the code). This way, I can improve on the model and use the validation set to guide me in improving the model. Just to make sure I am not overfitting to the validation set, the final testing set will be only tested at the end to see how well the model performed.
 
@@ -22,12 +28,6 @@ There will be a total of 3 models:
 **Link:** https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset/data
 
 **NOTE:** Dataset is considered to be data collected over a year and a half.
-
-## Project Overview
-
-1. [Data Overview and Preprocessing](#1-data-overview-and-preprocessing)
-2. [Models Performance](#2-models-performance)
-4. [Conclusion](#3-conclusion)
 
 ### Summary of Findings
 
